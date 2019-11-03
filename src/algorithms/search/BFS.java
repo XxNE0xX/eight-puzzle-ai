@@ -26,7 +26,7 @@ public class BFS extends AlgorithmClass {
     public void solve(String[][] initialGrid) {
         Node initialNode = new Node(initialGrid);
         openingManagement(initialNode);
-        if (initialNode.equals(Node.GOAL)) {
+        if (Node.isGoal(initialNode)) {
             return;
         }
         while (!Node.solved){
